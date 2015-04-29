@@ -26,5 +26,13 @@ int main() {
 	for(int i=0;i<10;i++){
 		printf("%d ",v[i]);
 	}
+	if (N % 2 == 1){
+		printf("\n中位數為%d", v[(N + 1) / 2]);
+	}
+	else{
+		float mid = (v[N / 2] + v[(N - 2) / 2]) / 2;
+		printf("\n中位數為%f ", mid);
+
+	}
 	return 0;
 }
